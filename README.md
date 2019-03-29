@@ -5,6 +5,10 @@ BALLISTIC CHALLENGE by Rodrigo Gonzales
 Original game by Rodrigo Gonzales
 
 
+Link to play play it online:
+https://msxpen.com/?code=-LbA-TLyi0myV0i7RkOS
+
+
 GAMEPLAY
 
   You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. Your goal is to hit the projectile on the two opposing walls (to the right and left of the screen). Each time you achieve this you will advance a level and you will not lose the projectile.  
