@@ -21,6 +21,7 @@ To shoot, use the SPACEBAR.
 
 
 SHORT DESCRIPTION OF THE PROGRAM
+
   
 Line 10:  Starts the variables and sets the width of the sprites.
  
