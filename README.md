@@ -104,5 +104,6 @@ It is possible to use this physics engine to elaborate other games, as well as s
 Example:
 
 Try to implement a Lunar Lander by adding accelerations on the AX and AY vectors during the main loop (lines 70 through 90).
-----------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
 
