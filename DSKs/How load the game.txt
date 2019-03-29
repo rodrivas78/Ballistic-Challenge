@@ -1,0 +1,7 @@
+
+After inserting the disk image in the emulator, type as follows:
+
+Load"BALLCHAL.BAS"
+
+
+(and then hit F5 to run)
