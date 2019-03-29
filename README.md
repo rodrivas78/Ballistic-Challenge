@@ -5,9 +5,6 @@ BALLISTIC CHALLENGE by Rodrigo Gonzales
 Original game by Rodrigo Gonzales
 
 
-Link to play play it online:
-https://msxpen.com/?code=-LbA-TLyi0myV0i7RkOS
-
 
 GAMEPLAY
 
