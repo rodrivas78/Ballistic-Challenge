@@ -22,10 +22,10 @@ Space bar: shoot
 
 ------------------------------------------------------------------------------
 
-Play instantly with the following :
+You can play instantly with the following online emulator: 
 http://webmsx.org/?MACHINE=MSX1&DISK=https://sites.google.com/site/taivas01/msxspirit/Ballistic_Challenge.dsk
 
---------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 SHORT DESCRIPTION OF THE PROGRAM
 
