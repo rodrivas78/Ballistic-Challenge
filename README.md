@@ -5,7 +5,7 @@ BALLISTIC CHALLENGE by Rodrigo Gonzales
 
 GAMEPLAY
 
-  You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. Your goal is to hit the projectile on the two opposing walls (to the right and left of the screen). Each time you achieve this you will advance a level and you will not lose the projectile.  
+  You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. Your goal is to hit the cannonball on the two opposing walls (to the right and left of the screen). Each time you achieve this you will advance a level and you will not lose the projectile.  
   Avoid hitting obstacles. If this occurs you will remain at the same level and you will 
 lose a projectile. If you run out of ammunition and a collision occurs, it's "GAME OVER"!       
 
