@@ -6,17 +6,26 @@ BALLISTIC CHALLENGE by Rodrigo Gonzales
 GAMEPLAY
 
   You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. Your goal is to hit the projectile on the two opposing walls (to the right and left of the screen). Each time you achieve this you will advance a level and you will not lose the projectile.  
-   You can allow (without unfortunate consequences) that the cannonball bounce off the ground, but you must prevent it from hitting the obstacles that get in the way.  If this occurs you will remain at the same level and you will still lose a projectile. If you run out of ammunition and a collision occurs, it's "GAME OVER"!
-      It will be victorious who can get through all 10 levels before the ammo ends.
+  Avoid hitting obstacles. If this occurs you will remain at the same level and you will 
+lose a projectile. If you run out of ammunition and a collision occurs, it's "GAME OVER"!       
+
+It will be victorious who can get through all 10 levels before the ammo ends. 
+
 Note: If the ball has a low vertical velocity, it will be swallowed underground, which will also result in the loss of a projectile.
   Good luck!
   
   
 CONTROLS:
 
-Use the ARROWS KEYS to control the scope and range of the projectile.
-To shoot, use the SPACEBAR.
+Arrow keys: controls the angle and shooting power
+Space bar: shoot
 
+------------------------------------------------------------------------------
+
+Play instantly with the following :
+http://webmsx.org/?MACHINE=MSX1&DISK=https://sites.google.com/site/taivas01/msxspirit/Ballistic_Challenge.dsk
+
+--------------------------------------------------------------------------
 
 SHORT DESCRIPTION OF THE PROGRAM
 
