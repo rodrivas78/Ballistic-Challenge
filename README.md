@@ -38,7 +38,7 @@ Lines 30 and 40:  Scenario design, positioning of obstacles and active text elem
   Here also are defined: the "acceleration of gravity" (AY = 1), the number of levels (C = 10) and the victory screen of the game.
   
 Line 50:  Implementing controls (default for keyboard)
- By pressing the space bar the shot is fired and the program goes to line 70
+ By pressing the space bar a shot is fired and the program goes to line 70
  Note:  To play with the joystick, change the values in parentheses of STICK (0) and STRIG (0) from 0 to 1.
  
 Line 60:  Draw the cannon and show the angle and power that the projectile will fire.
