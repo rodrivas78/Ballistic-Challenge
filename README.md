@@ -35,10 +35,10 @@ Line 10:  Starts the variables and sets the width of the sprites.
 Line 20:  Dimension and load the matrices. In the DATA lines we have the coordinates of each barrier / obstacle (sprites2 and sprite3) for each phase, sequentially. Note: For each level are four values (sprite2 (x, y) / sprite3 (x, y)), which will be stored in the matrices.
 
 Lines 30 and 40:  Scenario design, positioning of obstacles and active text elements (LEVEL and AMMO).
-  Here also are defined: the "acceleration of gravity" (AY = 1) and the number of phases (C = 10) and the victory screen of the game.
+  Here also are defined: the "acceleration of gravity" (AY = 1), the number of levels (C = 10) and the victory screen of the game.
   
 Line 50:  Implementing controls (default for keyboard)
- By pressing the space the shot is fired and the program goes to line 70
+ By pressing the space bar the shot is fired and the program goes to line 70
  Note:  To play with the joystick, change the values in parentheses of STICK (0) and STRIG (0) from 0 to 1.
  
 Line 60:  Draw the cannon and show the angle and power that the projectile will fire.
