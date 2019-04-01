@@ -47,6 +47,8 @@ Lines 70 and 80:  Here we have the shooting routine. Where is the control of tou
 If there is a collision with an obstacle the program is directed to line 100.
 
 Line 90: Creates the projectile trail and closes the firing routine loop (initiated by FOR on line 70).
+Addendum: to make the projectile leave a trail (as seen in the screenshots), change this line to:
+ 90 PSET(PX+6,PY+2),4:NEXT     
  
 Line 100: Explosion! Sound and routine of projectile collision with obstacles. Controls the end of the game, when G (number of projectiles is equal to zero). Print "GAME OVER" and ask if there will be any new action. If yes ("Y"), the program is restarted (directed to line 10). Otherwise, END (end of program).
 
