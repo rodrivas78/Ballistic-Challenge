@@ -1,0 +1,104 @@
+
+
+BALLISTIC CHALLENGE by Rodrigo Gonzales 
+
+ Um "10 Liner" com motor de física.
+ 
+GAMEPLAY:
+
+  Você possui um "canhão" (na verdade um estilingue de raio trator fotônico de última geração!) que atira projéteis saltitantes. Seu objetivo é acertar o projétil nas duas paredes opostas (à direita e à esquerda da tela).  Cada vez que conseguir isso você avançará de nível/estágio e não perderá o prójétil.  
+      Você pode permitir (sem consequências funestas) que a bala quique no chão, mas deve evitar que ela atinja os obstáculos que se interpõem no caminho. Se isso ocorrer você permecerá no mesmo nível e ainda perderá um projétil. Se acabar a munição e ocorrer uma colisão é "GAME OVER"!
+      Ganha o jogo quem conseguir passar por todos os 10 níveis antes de acabar a munição. 
+Obs.: Se a bola estiver com pouca velocidade vertical ela será tragada para o subsolo, o que também acarretará a perda de um projétil.
+  Boa sorte!
+  
+CONTROLE:
+
+Use:
+SETAS: para controlar a mira e o alcance do projétil.
+BARRA DE ESPAÇOS: para disparar o tiro.
+
+UMA BREVE DESCRIÇÃO DO PROGRAMA:
+
+ Linha 10: Inicia as variáveis e define largura dos sprites.
+ 
+ 20:   Dimensiona e carrega as matrizes. Nas linhas DATA temos as coordenadas de cada barreira/obstáculo (sprites2 e sprite3) para cada fase, sequencialmente. Obs.: Para cada fase são quatro valores (sprite2(x,y) / sprite3(x,y)), que serão armazenados nas matrizes
+ 
+30 e 40:  Desenho do cenário, posicionamento dos obstáculos e dos elementos de texto ativos (LEVEL e AMMO).
+  Aqui também são definidos: a "aceleração da gravidade" (AY=1) e a quantidade de fases (C=10) e a tela de vitória do jogo. 
+  
+50:  Implementação dos controles (pré-definido para teclado)
+ Ao apertar o espaço o tiro é disparado e o programa segue para a linha 70
+ Obs.: Para jogar com o joystick, altere os valores entre parênteses de STICK(0) e STRIG(0) de 0 para 1. 
+ 
+60: Desenha o canhão e mostra o ângulo e potência que o projétil será disparado. 
+
+70 e 80:  Aqui temos a rotina do tiro. Onde está o controle de toques nas paredes e obstáculos (ON SPRITE GOSUB).  É também onde fica o motor de física do jogo (leia mais sobre isso abaixo), com os cálculos envolvidos na atualização da posição e velocidade do projétil ** 
+  Havendo colisão com algum obstáculo o programa é direcionado para a linha 100. 
+  
+  90:  Cria o rastro do projétil e fecha o laço da rotina de tiro (iniciada pelo FOR na linha 70).
+Obs.:  para fazer o projétil deixar um rastro (como visto nas imagens), mude esta linha para:
+90 PSET(PX+6,PY+2),4:NEXT   
+
+100:  Explosão! Som e rotina da colisão do projétil com os obstáculos.  Controla o fim do jogo, quando G (número de projéteis é igual a zero). Imprime GAME OVER e pergunta se haverá nova tentiva. Se sim ("Y"), o programa é reiniciado (direcionado para a linha 10).  Otherwise, END (fim do programa).  
+
+---------------------------------------------------------------------------
+
+FINALIDADE DE ALGUMAS VARIÁVEIS:
+
+G : número de projéteis
+B :  Armazena a quantidade de toques nas paredes. Se for igual a 2 há avanço de fase.
+C :  Armazena o número de fases
+Q:  Não permite que as matrizes sejam redimensionadas quando o jogo for reiniciado. O que geraria um erro "Redimensioned array".
+X2 e Y2:  Retém (caso haja colisão com obstáculos), os valor de posicionamento do canhão configurados pelo jogador no disparo anterior. 
+
+------------------------------------------------------------------
+
+MOTOR DE FÍSICA
+**O Jogo contém um motor de física (parcial/simplificado), que consiste em um integrador (de posição e velocidade) que calcula e atualiza a posição do projétil baseado na velocidade, aceleração (armazenadas respectivamente nos vetores VX, VY, AX e AY) e no tempo (T).
+
+ O integrador pode ser dividido em duas seções: uma parte calcula a posição e a outra atualiza a velocidade (levando em conta a aceleração), ambas utilizando um intervalo de tempo, definido em T. 
+ 
+Cálculo da posição:
+
+Px =  Px + Vx * T
+Py = Py + Vy * T
+
+Cálculo da velocidade (velocity): 
+
+Vy = Vy + Ay * T
+Vx = Vx + Ax * T
+
+Descrição das variáveis:
+
+ Px = Posição (eixo X)     
+ Py = Posição (eixo Y)
+ Vx = Vetor velocidade no eixo x.
+ Vy = Vetor velocidade no eixo y.
+Ax e Ay = Vetores aceleração.
+
+  A "força" que simula a gravidade (um aceleração constante "negativa"no eixo Y) pode ser encontrada na linha 30:
+  AY=1.  (Aqui o valor definido é positivo pois a origem da coordenada Y (y=0) no MSX é "invertida", isto é, na parte superior da tela).   
+EXPERIÊNCIAS  (Transforme o jogo em um simulador de balística):
+
+⦁	 Balística na Lua ou Marte:
+Altere (na linha 30) o valor de AY para algo em torno de 0.2 a 0.4 e veja como o projétil agora sobe como um foguete com a aplicação mínima de força. Pode-se também simular uma gravidade mais forte (ou um projétil mais pesado) amentando-se o valor (para acima de 1).
+
+⦁	Tiro de bola de fogo (anti-gravitacional):
+Altere na linha 30 o valor de AY para AY=-.4
+
+⦁	Aumentando a potência limite do canhão:
+Para isso aumente (na linha 50) os valores que limitam a velocidade dos vetores no momento do disparo . Como neste exemplo (em negrito):
+50 D=STICK(0):IFVX>=20THENVX=19ELSEIFVX<=-1THENVX=0ELSEIFABS(VY)>=20THENVY=-19ELSEIFVY=0THENVY=-1ELSEIFD=1THENVY=VY-1ELSEIFD=5THENVY=VY+1ELSEIFD=3THENVX=VX+1ELSEIFD=7THENVX=VX-1ELSEIFSTRIG(0)THEN70
+
+⦁	   Câmera Lenta. 
+Para deixar a trajetória em câmera lenta, modifique (na linha 10) o valor da variável "T" para T=.5 ou ainda T=.5.
+Dica: Se quiser abrir espaço na tela remova os obstáculos apagando na linha 30 os seguintes comandos: [PUTSPRITE2,(I(C),J(C)),4,2] e [PUTSPRITE3,(K(C),M(C)),11,3] 
+
+CONSIDERAÇÕES FINAIS
+
+É possivel utilizar este motor de física para elaborar outros jogos, assim como diversas outras experiências interessantes.   
+Exemplo:
+Tente implementar um "Lunar Lander" adicionando acelerações nos vetores AX e AY durante o loop principal (linhas 70 a 90).
+
+
