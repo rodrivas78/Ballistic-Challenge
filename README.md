@@ -32,7 +32,7 @@ SHORT DESCRIPTION OF THE PROGRAM
   
 Line 10:  Starts the variables and sets the width of the sprites.
  
-Line 20:  Dimension and load the matrices. In the DATA lines we have the coordinates of each barrier / obstacle (sprites2 and sprite3) for each phase, sequentially. Note: For each level are four values (sprite2 (x, y) / sprite3 (x, y)), which will be stored in the matrices.
+Line 20:  Dimension and load the matrices. In the DATA lines we have the coordinates of each barrier / obstacle (sprites2 and sprite3) for each level, sequentially. Note: For each level are four values (sprite2 (x, y) / sprite3 (x, y)), which will be stored in the matrices.
 
 Lines 30 and 40:  Scenario design, positioning of obstacles and active text elements (LEVEL and AMMO).
   Here also are defined: the "acceleration of gravity" (AY = 1), the number of levels (C = 10) and the victory screen of the game.
