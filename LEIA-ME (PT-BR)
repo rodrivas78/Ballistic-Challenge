@@ -78,7 +78,7 @@ Descrição das variáveis:
  Vy = Vetor velocidade no eixo y.
 Ax e Ay = Vetores aceleração.
 
-  A "força" que simula a gravidade (um aceleração constante "negativa"no eixo Y) pode ser encontrada na linha 30:
+  A "força" que simula a gravidade (uma aceleração constante "negativa" no eixo Y) pode ser encontrada na linha 30:
   AY=1.  (Aqui o valor definido é positivo pois a origem da coordenada Y (y=0) no MSX é "invertida", isto é, na parte superior da tela).   
 
 
