@@ -18,6 +18,7 @@ Use:
 SETAS: para controlar a mira e o alcance do projétil.
 BARRA DE ESPAÇOS: para disparar o tiro.
 
+
 UMA BREVE DESCRIÇÃO DO PROGRAMA:
 
  Linha 10: Inicia as variáveis e define largura dos sprites.
@@ -79,6 +80,8 @@ Ax e Ay = Vetores aceleração.
 
   A "força" que simula a gravidade (um aceleração constante "negativa"no eixo Y) pode ser encontrada na linha 30:
   AY=1.  (Aqui o valor definido é positivo pois a origem da coordenada Y (y=0) no MSX é "invertida", isto é, na parte superior da tela).   
+
+
 EXPERIÊNCIAS  (Transforme o jogo em um simulador de balística):
 
 ⦁	 Balística na Lua ou Marte:
