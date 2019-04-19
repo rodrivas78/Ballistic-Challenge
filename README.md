@@ -24,7 +24,7 @@ Space bar: shoot
 ------------------------------------------------------------------------------
 
 You can play instantly with the following online emulator: 
-https://msxpen.com/codes/-LbZb-5EUz0UaBiwN3Oc
+http://webmsx.org/?MACHINE=MSX1&AUTODETECT_URL=https://sites.google.com/site/taivas01/msxspirit/Ballistic_Challenge.dsk
 
 -----------------------------------------------------------------------------
 
