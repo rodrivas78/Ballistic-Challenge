@@ -105,7 +105,7 @@ To do this, increase (at line 50) the values that limit the velocity of the vect
 50 D=STICK(0):IFVX>=20THENVX=19ELSEIFVX<=-1THENVX=0ELSEIFABS(VY)>=20THENVY=-19ELSEIFVY=0THENVY=-1ELSEIFD=1THENVY=VY-1ELSEIFD=5THENVY=VY+1ELSEIFD=3THENVX=VX+1ELSEIFD=7THENVX=VX-1ELSEIFSTRIG(0)THEN70
 
 ⦁ Slow Motion 
-To leave the trajectory in slow motion, modify (in line 10) the value of the variable "T" for T = .5 or even T = .5.
+To leave the trajectory in slow motion, modify (in line 10) the value of the variable "T" for T = .5 or even T = .4.
 
 Tip: If you want to make room on the screen remove obstacles by deleting the following commands on line 30: [PUTSPRITE2, (I (C), J (C)), 4.2] and [PUTSPRITE3, (K (C), M C)), 11.3]
 
