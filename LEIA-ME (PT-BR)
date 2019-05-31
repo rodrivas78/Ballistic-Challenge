@@ -95,7 +95,7 @@ Para isso aumente (na linha 50) os valores que limitam a velocidade dos vetores 
 50 D=STICK(0):IFVX>=20THENVX=19ELSEIFVX<=-1THENVX=0ELSEIFABS(VY)>=20THENVY=-19ELSEIFVY=0THENVY=-1ELSEIFD=1THENVY=VY-1ELSEIFD=5THENVY=VY+1ELSEIFD=3THENVX=VX+1ELSEIFD=7THENVX=VX-1ELSEIFSTRIG(0)THEN70
 
 ⦁	   Câmera Lenta. 
-Para deixar a trajetória em câmera lenta, modifique (na linha 10) o valor da variável "T" para T=.5 ou ainda T=.5.
+Para deixar a trajetória em câmera lenta, modifique (na linha 10) o valor da variável "T" para T=.5 ou ainda T=.4.
 Dica: Se quiser abrir espaço na tela remova os obstáculos apagando na linha 30 os seguintes comandos: [PUTSPRITE2,(I(C),J(C)),4,2] e [PUTSPRITE3,(K(C),M(C)),11,3] 
 
 CONSIDERAÇÕES FINAIS
