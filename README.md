@@ -23,8 +23,8 @@ Space bar: shoot
 
 ------------------------------------------------------------------------------
 
-You can play instantly with the following online emulator: 
-http://webmsx.org/?MACHINE=MSX1&AUTODETECT_URL=https://sites.google.com/site/taivas01/msxspirit/Ballistic_Challenge.dsk
+Play it online here: 
+https://msxpen.com/codes/-LbZb-5EUz0UaBiwN3Oc
 
 -----------------------------------------------------------------------------
 
@@ -112,9 +112,6 @@ Tip: If you want to make room on the screen remove obstacles by deleting the fol
 FINAL CONSIDERATIONS
 
 It is possible to use this physics engine to elaborate other games, as well as several other interesting experiences.
-Example:
-
-Try to implement a Lunar Lander by adding accelerations on the AX and AY vectors during the main loop (lines 70 through 90).
 
 ----------------------------------------------------------------------------------------------
 
