@@ -1,6 +1,6 @@
 
-After inserting the disk image in the emulator, if the game does not start automatically type as follows:
-
-Load"BALLCHAL.BAS"
-
-(and then hit F5 to run)
+Load Instructions:
+1. Start BlueMSX.
+2. Drag & drop disk image "Ballistic_Challenge.dsk" to the BlueMSX main window.
+3. Press "play" button (little arow on the top) or  LAlt+F9
+4. The game will start automatically
