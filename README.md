@@ -6,13 +6,13 @@ A "10 Liner" with physics engine.
 
 GAMEPLAY
 
-  You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. Your goal is to hit the cannonball on the two opposing walls (to the right and left of the screen). Each time you achieve this you will advance a level and you will not lose the projectile.  
-  Avoid hitting obstacles. If this occurs you will remain at the same level and you will 
-lose a projectile. If you run out of ammunition and a collision occurs, it's "GAME OVER"!       
+You have a "cannon" (actually a state-of-the-art photonic ray slingshot!) that shoots bouncy projectiles. 
+Your goal is to hit the cannonball on the two opposing walls. Each time you achieve this you will advance a level.
+Avoid hitting obstacles!
+If you run out of ammunition and a collision occurs, it's "GAME OVER"!
 
-It will be victorious who can get through all 10 levels before the ammo ends. 
+It will be victorious who can get through all 10 levels before the ammo ends.
 
-Note: If the ball has a low vertical velocity, it will be swallowed underground, which will also result in the loss of a projectile.
   Good luck!
   
   
