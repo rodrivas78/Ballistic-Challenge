@@ -24,7 +24,7 @@ Space bar: shoot
 ------------------------------------------------------------------------------
 
 Play it online here: 
-https://msxpen.com/codes/-LbZb-5EUz0UaBiwN3Oc
+https://webmsx.org/?DISK=https://github.com/rodrivas78/MSX/raw/master/BASIC_10_Liners/10_Liners_Contest_2019/Ballistic_Challenge.dsk
 
 -----------------------------------------------------------------------------
 
